@@ -42,9 +42,11 @@ struct HeartBeat: View {
             HStack {
                 Image(systemName: "heart.fill")
                     .foregroundColor(.pink)
+                    .accessibilityHidden(true)
                 Text("68 BPM Average")
                     .foregroundColor(.secondary)
             }
+            .accessibilityElement(children: .combine)
         }
         .frame(height: Constants.detailChartHeight)
     }

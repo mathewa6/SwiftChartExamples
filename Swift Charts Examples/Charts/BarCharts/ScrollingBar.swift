@@ -48,7 +48,7 @@ struct ScrollingBar: View {
                     )
                     .foregroundStyle(wine.inOut == .in ? .purple : .green)
                 }
-                .accessibilityLabel("\(grouping.inOut.title)")
+                .accessibilityLabel("\(wine.month) - \(grouping.inOut.title)")
                 .accessibilityValue("\(wine.actual)")
             }
         }
